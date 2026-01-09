@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartão Presente</title>
+<style>
+body {
+    background: linear-gradient(135deg, #f8cdda, #fbc2eb);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #6a1b9a;
+}
+
+.gift-box {
+    font-size: 120px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gift-box:hover {
+    transform: scale(1.1);
+}
+
+#surprise {
+    display: none;
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.names {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highlight {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Clique na caixa para abrir seu presente 🎁</h1>
+
+<div class="gift-box" onclick="openGift()">🎁</div>
+
+<div id="surprise">
+    <h2>🎉 Surpresa!</h2>
+    <p>Uma <strong>mesa nova para cozinha</strong> 🪑✨</p>
+    <p>Essa é apenas uma lembrancinha para reafirmar do quanto você é importante para nós e como sua felicidade importa, você é querida, amada e todos nós desejamos tudo de bom para você!!! Um beijo no coração, esperamos que goste.</p>
+
+    <div class="names">
+        <p><strong>Com carinho de:</strong></p>
+        <p>
+        Tia Rita • Séfora • Vivian Teixeira • Vitória Galego • Pamela • Livia Teixeira • Mamãe • Júnior • Karolany • Thaís Sousa • Ana Laura • Tia Walne • Tia Claudia • Maria Clara • Tia Clenice • Anikele • Papaim • Leandro (cunhado) • Dudu • Angélica Rodrigues • Ritinha • Vanessa • Susana • Rosana • Elizabeth • Silvinha • Rayane • DÉBORA ESTER • Matheus Mourão • Henrique Pires • Gaby Carvalho • Kayky Farias • Leonardo Teixeira • Laura • Maria Carmem • Paulo Rossi • Juliana Barros
+        </p>
+
+        <p class="highlight">
+        💖 E especialmente por: Eloah, a melhor irmã, que planejou tudo 💖
+        </p>
+    </div>
+</div>
+
+<script>
+function openGift() {
+    document.querySelector(".gift-box").innerHTML = "🎊";
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
